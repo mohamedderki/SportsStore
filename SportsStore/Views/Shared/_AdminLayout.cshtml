@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <title>Admin - @ViewBag.Title</title>
+</head>
+<body>
+    <div class="m-1 p-1">
+        <div class="bg-info p-2 row">
+            <div class="col">
+                <h4>@ViewBag.Title</h4>
+            </div>
+            <div class="col-2">
+                <a class="btn btn-sm btn-primary"
+                   asp-action="Logout" asp-controller="Account">Log Out</a>
+            </div>
+        </div>
+        @RenderBody()
+    </div>
+</body>
+</html>
